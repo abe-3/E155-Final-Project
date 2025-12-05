@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (Synth + PnR + Pack)",
+      "type": "shell",
+      "command": "make",
+      "args": ["all"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Upload to FPGA",
+      "type": "shell",
+      "command": "make",
+      "args": ["prog"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Simulation",
+      "type": "shell",
+      "command": "make",
+      "args": ["sim"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Open Waveforms",
+      "type": "shell",
+      "command": "gtkwave blinky.vcd",
+      "group": "test",
+      "presentation": {
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "Clean Workspace",
+      "type": "shell",
+      "command": "make",
+      "args": ["clean"],
+      "problemMatcher": []
+    }
+  ]
+}

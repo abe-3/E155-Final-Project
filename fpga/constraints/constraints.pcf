@@ -1,0 +1,26 @@
+set_io reset_n 43
+set_io matrix_oe 13
+set_io matrix_lat 18
+set_io matrix_clk 9
+
+set_io matrix_data[0] 47
+set_io matrix_data[1] 48
+set_io matrix_data[2] 4
+set_io matrix_data[3] 6
+set_io matrix_data[4] 11
+set_io matrix_data[5] 19
+
+set_io matrix_row[0] 46
+set_io matrix_row[1] 45
+set_io matrix_row[2] 3
+set_io matrix_row[3] 44
+set_io matrix_row[4] 2
+
+set_io drum_beat[0] 36
+set_io drum_beat[1] 42
+set_io drum_beat[2] 38
+set_io drum_beat[3] 28
+
+set_io sck 20
+set_io sdi 12
+set_io cs_n 21
