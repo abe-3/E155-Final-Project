@@ -1,0 +1,9 @@
+# Mac OS files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# x86 files
+Thumbs.db
+Desktop.ini
